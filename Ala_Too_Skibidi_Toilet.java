@@ -1,10 +1,10 @@
 import java.util.Scanner;
 
-public class Ala_Too_Skibidi_Toilet {
+public class Ala_too_Skibidi_toilet {
    Scanner scanner = new Scanner(System.in);
 
    public static void main(String[] args) {
-      Ala_Too_Skibidi_Toilet obj = new Ala_Too_Skibidi_Toilet();
+      Ala_too_Skibidi_toilet obj = new Ala_too_Skibidi_toilet();
 
       System.out.println("Enter your last name: ");
       String lastName = obj.scanner.nextLine();
@@ -14,7 +14,8 @@ public class Ala_Too_Skibidi_Toilet {
       clearConsole();
 
       System.out.println("The presence of a school education certificate");
-      System.out.println(" 0 - Not available\r\n" + " 1- Available\r\n");
+      System.out.println("       0- Not available\r\n" +
+            "       1- Available\r\n");
       int input = obj.scanner.nextInt();
       boolean hasSchooCertificate = (input == 1);
 
@@ -35,11 +36,11 @@ public class Ala_Too_Skibidi_Toilet {
          } else {
             System.out.println("Your english language proficiency level");
             System.out.println("       1- A1\r\n" +
-                               "       2- A2\r\n" +
-                               "       3- B1\r\n" +
-                               "       4- B2\r\n" +
-                               "       5- C1\r\n" +
-                               "       6- C2\r\n");
+                  "       2- A2\r\n" +
+                  "       3- B1\r\n" +
+                  "       4- B2\r\n" +
+                  "       5- C1\r\n" +
+                  "       6- C2\r\n");
             int englishLevel = obj.scanner.nextInt();
             if (englishLevel > 6) {
                clearConsole();
@@ -49,14 +50,14 @@ public class Ala_Too_Skibidi_Toilet {
                clearConsole();
                System.out.println("Choose which specialty you want to study.\n" +
                      "Menu of Selecting specialties:");
-               System.out.println("      1- Computer Engineering (2500$)\n" +
-                                  "      2- Artificial Intelligence (2200$)\n" +
-                                  "      3- Psychology (1900$)\n" +
-                                  "      4- Journalism (1700$)\n" +
-                                  "      5- International Relations (2200$)\n" +
-                                  "      6- Law (1800$)\n" +
-                                  "      7- Management (2200$)\n" +
-                                  "      8- Medicine (3300$)");
+               System.out.println("      1- Computer Engineering (2500$)\n" + //
+                     "      2- Artificial Intelligence (2200$)\n" + //
+                     "      3- Psychology (1900$)\n" + //
+                     "      4- Journalism (1700$)\n" + //
+                     "      5- International Relations (2200$)\n" + //
+                     "      6- Law (1800$)\n" + //
+                     "      7- Management (2200$)\n" + //
+                     "      8- Medicine (3300$)");
                int chosenSpecialty = obj.scanner.nextInt();
                switch (chosenSpecialty) {
                   case 1:
@@ -102,7 +103,7 @@ public class Ala_Too_Skibidi_Toilet {
                   default:
                      clearConsole();
                      System.out.println(
-                           "WE HAVE ONLY EIGHT SPECIALTIES, STUDENTS WHO CANNOT READ, CANNOT BE ADMITTED TO ALA TOO UNIVERSITY!!!");
+                           "WE HAVE ONLY EIGHT SPECIALTIES, STUDENTS WHO CANNOT READ. CANNOT BE ADMITTED TO ALA TOO UNIVERSITY!!!");
                      System.exit(0);
                      break;
                }
@@ -140,12 +141,14 @@ public class Ala_Too_Skibidi_Toilet {
                clearConsole();
                System.out.println(
                      "You have an insufficient level of English, the University of Alatoo may offer you to take a one-year course.\r\n"
-                           + "Then next year, after completing that course, you will be able to enroll the university.");
+                           + //
+                           "Then next year, after completing that course, you will be able to enroll the university.");
             }
          }
       } else {
          clearConsole();
-         System.out.println("Applicant, without school education certificate, cannot be admitted to Ala-Too University");
+         System.out
+               .println("Applicant, without school education certificate, cannot be admitted to Ala-Too University");
       }
 
    }
